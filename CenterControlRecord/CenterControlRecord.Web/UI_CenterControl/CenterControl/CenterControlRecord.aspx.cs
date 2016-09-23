@@ -37,6 +37,7 @@ namespace CenterControlRecord.Web.UI_CenterControl.CenterControl
         [WebMethod]
         public static string GetPrcessTypeItem(string myOrganizationId)
         {
+            //mUserId
             DataTable table = CenterControlRecordService.GetProcessTypeInfo(myOrganizationId);
             string json=EasyUIJsonParser.DataGridJsonParser.DataTableToJson(table);
             return json;       

@@ -1622,6 +1622,10 @@
     <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_klqc_klqf\report_ClinkerOperation.html" />
     <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_klqc_klqf\report_CoalPreparation.html" />
     <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_klqc_klqf\report_rawMaterialsPreparation.html" />
+    <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_ychc_lsf\2#-ClinkerPreparation01.html" />
+    <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_ychc_lsf\2#-ClinkerPreparation02.html" />
+    <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_znc_znf\1#_CementPreparation.html" />
+    <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_znc_znf\2#_CementPreparation.html" />
     <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_znc_znf\report_Rollingmachine.html" />
     <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_znc_znf\report_ClinkerPreparation.html" />
     <Content Include="UI_CenterControl\ReportTemplete\zc_nxjc_znc_znf\report_CementPreparation.html" />

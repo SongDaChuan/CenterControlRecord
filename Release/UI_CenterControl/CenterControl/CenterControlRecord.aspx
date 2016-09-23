@@ -61,10 +61,10 @@
                                     <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true"
                                         onclick="QueryCenterControlReportInfoFun();">查询</a>
                                 </td>
-                                <td>
+                           <%--     <td>
                                     <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true"
                                         onclick="GetCenterControlReportTagInfoFun();">标签查询</a>
-                                </td>
+                                </td>--%>
                                 <td>
                                     <input id="TextBox_OrganizationId" style="width: 10px; visibility: hidden;" />
                                 </td>

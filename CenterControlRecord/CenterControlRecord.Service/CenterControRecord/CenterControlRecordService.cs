@@ -202,20 +202,21 @@ namespace CenterControlRecord.Service.CenterControl
            string m_Endtime = time + " 23:59:59";
 
            //创建空DataTable 然后再往里面填数
-           DataTable c_AList = GetCountList(keyId);
+           DataTable c_AList = GetCountList(keyId);    //获取标签及显示顺序
            int cACount = c_AList.Rows.Count;
            for (int cA = 0; cA < cACount; cA++)
            {
                string s_Count = "Sum" + c_AList.Rows[cA]["DisplayIndex"].ToString().Trim();
                m_CenterControlTableStructrue.Columns.Add(s_Count,typeof(float));
            }
-  
+            ////////创建模板表完成
+
            //数据处理主程序
            DataTable t_List = GetTableNum(keyId);
            int tCount=t_List.Rows.Count;   //获取表数目
            for (int t = 0; t < tCount; t++) 
            {
-               string mTableName=t_List.Rows[t]["DCSTableName"].ToString().Trim();
+               string mTableName=t_List.Rows[t]["DCSTableName"].ToString().Trim(); //所要查询的历史表名称
                DataTable c_List=GetCountList(keyId, mTableName);     //获取该表下的列  拼SQL 语句
                int cCount = c_List.Rows.Count;
                string s_sum="";
@@ -254,7 +255,7 @@ namespace CenterControlRecord.Service.CenterControl
                                   {
                                       if (table.Rows[nOne]["hour"].ToString() == rName)
                                       {
-                                          m_CenterControlTableStructrue.Rows[nOne][cName] = table.Rows[nOne][cName];
+                                          m_CenterControlTableStructrue.Rows[n][cName] = table.Rows[nOne][cName];
                                       }
                                   }
           
@@ -268,7 +269,7 @@ namespace CenterControlRecord.Service.CenterControl
                                 {
                                     if (table.Rows[mTwo]["hour"].ToString() == rName)
                                     {
-                                        m_CenterControlTableStructrue.Rows[mTwo][cName] = table.Rows[mTwo][cName];
+                                        m_CenterControlTableStructrue.Rows[m][cName] = table.Rows[mTwo][cName];
                                     }
                                 }
 
